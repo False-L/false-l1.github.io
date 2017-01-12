@@ -19,7 +19,7 @@ side_bar_repo_limit: 5
 author: YL Lin
 #organization: Sogou, Inc.
 #organization_url: https://www.sogou.com
-location: Zheng Jiang, China
+location: Zhe Jiang, China
 email: waterservers@163.com
 
 # ---------------- #
@@ -96,7 +96,11 @@ twitter_username:
 comments_provider: disqus
 # !!!重要!!! 请修改下面两个用户名为你自己申请的
 # !!!Important!!! Please modify usernames below to yours
+<<<<<<< HEAD
 duoshuo_username: disqus
+=======
+duoshuo_username: waterserver
+>>>>>>> origin/master
 disqus_username: 永恒的心
 # 在使用 disqus 的时候可点击显示多说评论框
 lazy_load_duoshuo: true
