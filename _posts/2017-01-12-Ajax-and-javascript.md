@@ -5,12 +5,12 @@ categories: [Ajax, JavaScript]
 description: 本次尝试首先是在php+mysql+Apache环境下，通过javascript实现Ajax例子。
 keywords: Ajax, JavaScript, Apache, php, mysql
 ---
-#第一个Ajax调用
-第一个Ajax调用：
+<h1>第一个Ajax调用</h1>
+<p>第一个Ajax调用：<p>
 本次尝试首先是在php+mysql+Apache环境下，通过javascript实现Ajax例子。
-以下是html的代码  \n\n
+以下是html的代码  \n
 核心为代码中js部分
-```js
+```````
 <script type="text/javascript">
 function Ajax(){
 var xmlHttpReq= null;
@@ -33,9 +33,10 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 	}
 }
 </script>
-```
-以下是html的完成代码
-```html
+````````
+<p>以下是html的完整代码<p>
+<pre><code>
+---
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -70,11 +71,12 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 	<input type="button" value="Ajax提交" onclick="Ajax();" />
 	<div id="resText"></div>
 </body>
-```
-#PHP代码
-php代码较为简单,保存为text.php
-```
+---
+</code></pre>
+>PHP代码
+<p>php代码较为简单,保存为text.php<p>
+<pre><code>
 <?php
 echo "hello Ajax!";
 ?>
-```
+</code></pre>
