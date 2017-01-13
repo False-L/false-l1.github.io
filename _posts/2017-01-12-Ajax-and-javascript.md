@@ -10,6 +10,7 @@ keywords: Ajax, JavaScript, Apache, php, mysql
 本次尝试首先是在php+mysql+Apache环境下，通过javascript实现Ajax例子。
 以下是html的代码  \n
 核心为代码中js部分
+
 ```html
 <script type="text/javascript">
 function Ajax(){
@@ -18,7 +19,7 @@ if(window.ActiveXObject){
 xmlHttpReq =new ActiveXObject("Microsoft.XMLHTTP");
 }else if(window.XMLHttpRequest){
 xmlHttpReq =new XMLHttpRequest();
-				}
+}
 if(xmlHttpReq != null){
 xmlHttpReq.open("GET","test.php",true);
 xmlHttpReq.onreadystatechange= RequestCallBack;
@@ -36,16 +37,15 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 
 ```
 <p>以下是html的完整代码<p>
-<pre><code>
-
-~~~html
-
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 <title>Ajax测试页</title>
 <script type="text/javascript">
+```
+```html
 function Ajax(){
 var xmlHttpReq= null;
 if(window.ActiveXObject){
@@ -66,26 +66,26 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 		}
 	}
 }
+```
+```html
 </script>
 <style type="text/css">
 </style>
 </head>
 <body>
+
 	<input type="button" value="Ajax提交" onclick="Ajax();" />
 	<div id="resText"></div>
 </body>
-
-~~~
-
-</code></pre>
->PHP代码
+```
+> PHP代码
 <p>php代码较为简单,保存为text.php<p>
-<pre><code>
-~~~php
 
+```php
 <?php
 echo "hello Ajax!";
 ?>
-
-~~~
-</code></pre>
+ 
+```
+代码粘贴的一个小问题：如何在markdown格式下粘贴完整的html代码？
+目前我摸索的解决方式：将代码用分段粘贴。
