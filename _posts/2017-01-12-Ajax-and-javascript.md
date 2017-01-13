@@ -12,7 +12,7 @@ keywords: Ajax, JavaScript, Apache, php, mysql
 核心为代码中js部分
 
 ```html
-<script type="text/javascript">
+
 function Ajax(){
 var xmlHttpReq= null;
 if(window.ActiveXObject){
@@ -33,41 +33,17 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 		}
 	}
 }
-</script>
 
 ```
 <p>以下是html的完整代码<p>
 ```html
+
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Ajax测试页</title>
 <script type="text/javascript">
-```
-```html
-function Ajax(){
-var xmlHttpReq= null;
-if(window.ActiveXObject){
-xmlHttpReq =new ActiveXObject("Microsoft.XMLHTTP");
-}else if(window.XMLHttpRequest){
-xmlHttpReq =new XMLHttpRequest();
-				}
-if(xmlHttpReq != null){
-xmlHttpReq.open("GET","test.php",true);
-xmlHttpReq.onreadystatechange= RequestCallBack;
-xmlHttpReq.send(null);
-				}
-function RequestCallBack(){
-if(xmlHttpReq.readyState == 4){
-if(xmlHttpReq.status == 200){
-document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
-			}
-		}
-	}
-}
-```
-```html
 </script>
 <style type="text/css">
 </style>
