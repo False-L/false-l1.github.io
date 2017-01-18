@@ -9,8 +9,8 @@ keywords: Ajax, JavaScript, Apache, php, mysql
 <p>第一个Ajax调用：</p>
 本次尝试首先是在php+mysql+Apache环境下，通过javascript实现Ajax例子。
 以下是代码核心:<br />
-<h2>javascript部分</h2>
-
+<h2>javascript部分</h2><br />
+<p>
 <code><pre>
 
 function Ajax(){
@@ -34,10 +34,10 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 	}
 }
 </pre></code>
-
+</p>
 <h2>html代码</h2>
 <p>以下是html的完整代码</p>
-
+<p>
 <code><pre>
 
 &lt;!DOCTYPE HTML&gt;
@@ -56,6 +56,7 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre></code>
+</p>
 
 <h2>PHP代码</h2>
 <p>php代码较为简单,保存为text.php</p>
