@@ -17,8 +17,8 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: YL Lin
-organization: Sogou, Inc.
-organization_url: https://www.sogou.com
+organization: none
+organization_url: none
 location: Zhe Jiang, China
 email: waterservers@163.com
 
@@ -105,10 +105,10 @@ lazy_load_duoshuo: true
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id: UA-80669434-1
+    analytics_id: 
 
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [Java, C++, Html, JavaScript]
+skill_software_keywords: [Java, C++, Html, JavaScript, jQuery]
 skill_windows_keywords: [Win32, Linux]

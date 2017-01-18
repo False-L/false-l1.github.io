@@ -6,12 +6,10 @@ description: 本次尝试首先是在php+mysql+Apache环境下，通过javascrip
 keywords: Ajax, JavaScript, Apache, php, mysql
 ---
 <h1>第一个Ajax调用</h1>
-<p>第一个Ajax调用：<p><br />
+<p>第一个Ajax调用：</p>
 本次尝试首先是在php+mysql+Apache环境下，通过javascript实现Ajax例子。
-以下是html的代码  \n
-核心为代码中js部分<br />
-
-
+以下是代码核心:<br />
+javascript部分
 <code><pre>
 function Ajax(){
 var xmlHttpReq= null;
@@ -34,7 +32,7 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 	}
 }
 </pre></code>
-<p>以下是html的完整代码<p><br />
+<p>以下是html的完整代码</p>
 <code><pre>
 &lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -50,14 +48,14 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 	&lt;input type="button" value="Ajax提交" onclick="Ajax();" /&gt;
 	&lt;div id="resText"&gt;&lt;/div&gt;
 &lt;/body&gt;
+&lt;/html&gt;
 </pre></code>
-
 > PHP代码
-<p>php代码较为简单,保存为text.php<p>
+<p>php代码较为简单,保存为text.php</p>
 <code><pre>
 &lt;?php
 echo "hello Ajax!";
 ?&gt;
 代码粘贴的一个小问题：如何在markdown格式下粘贴完整的html代码？
-目前我摸索的解决方式：将代码用段粘贴。
+目前我摸索的解决方式：使用转义符。
 
