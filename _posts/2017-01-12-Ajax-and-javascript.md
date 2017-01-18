@@ -9,8 +9,10 @@ keywords: Ajax, JavaScript, Apache, php, mysql
 <p>第一个Ajax调用：</p>
 本次尝试首先是在php+mysql+Apache环境下，通过javascript实现Ajax例子。
 以下是代码核心:<br />
-javascript部分
+<h2>javascript部分</h2>
+
 <code><pre>
+
 function Ajax(){
 var xmlHttpReq= null;
 if(window.ActiveXObject){
@@ -32,8 +34,12 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 	}
 }
 </pre></code>
+
+<h2>html代码</h2>
 <p>以下是html的完整代码</p>
+
 <code><pre>
+
 &lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -50,12 +56,16 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre></code>
-> PHP代码
+
+<h2>PHP代码</h2>
 <p>php代码较为简单,保存为text.php</p>
+
 <code><pre>
+
 &lt;?php
 echo "hello Ajax!";
 ?&gt;
+</pre></code>
 代码粘贴的一个小问题：如何在markdown格式下粘贴完整的html代码？
 目前我摸索的解决方式：使用转义符。
 
