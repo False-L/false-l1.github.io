@@ -11,7 +11,7 @@ keywords: Ajax, JavaScript, Apache, php, mysql
 以下是代码核心:<br />
 <h2>javascript部分</h2><br />
 <p>
-<code><pre>
+<pre>
 function Ajax(){
 var xmlHttpReq= null;
 if(window.ActiveXObject){
@@ -32,12 +32,12 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 		}
 	}
 }
-</pre></code>
+</pre>
 </p>
 <h2>html代码</h2>
 <p>以下是html的完整代码</p>
 <p>
-<code><pre>
+<pre>
 &lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -53,17 +53,17 @@ document.getElementById("resText").innerHTML =xmlHttpReq.responseText;
 	&lt;div id="resText"&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</pre></code>
+</pre>
 </p>
 
 <h2>PHP代码</h2>
 <p>php代码较为简单,保存为text.php</p>
 <p>
-<code><pre>
+<pre>
 &lt;?php
 echo "hello Ajax!";
 ?&gt;
-</pre></code>
+</pre>
 </p>
 代码粘贴的一个小问题：如何在markdown格式下粘贴完整的html代码？
 目前我摸索的解决方式：使用转义符。
