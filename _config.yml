@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://false-l.github.io
+url: https://false-l.github.io
 date_format: "ordinal"
 title: WaterServer
 subtitle: "life is brief, and then you die, you know?"
@@ -11,7 +11,7 @@ keywords: waterserver, false-l, YlLin
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
-side_bar_repo_limit: 5
+side_bar_repo_limit: 3
 
 # ---------------- #
 #      Author      #
@@ -110,5 +110,5 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [Java, C++, Html, JavaScript, jQuery]
+skill_software_keywords: [C, C++, Html, JavaScript, jQuery, PHP]
 skill_windows_keywords: [Win32, Linux]
